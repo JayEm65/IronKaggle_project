@@ -82,5 +82,22 @@ MSE = 7268999073.8572
   
 
 
+An even better result has been achieved by the XGB model and the results confirm that:
+
+R² = 0.9945
+RMSE = 10.2309
+MAE = 7.4232
+MSE = 104.6714
+
+To make sure the model wasn't overfitted, cross validation has been implemented and the results show a mean cross validation RMSE of 9.096.
+
+This makes our XGB model a good model to predict house values with an average of margin error that lies underneath 10.000 dollars.
+
+Cross-Validation RMSE Scores: [ 8.83400844 10.10031923  8.77603377  8.850051    8.9176697 ]
+Mean Cross-Validation RMSE: 9.095616428643199
+
+For further information on the results and the models used please refer to the presentation attached in the repository.
+
+Marta, Mirko, Marc
 
  
