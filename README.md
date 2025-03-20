@@ -68,10 +68,12 @@ The price feature appears skewed on the left and has extreme outliers on the rig
 
 Marc found the cap for the numerical features, resulting in the best regression results. The following code was used to cap outliers:
 
+```python
 # Cap outliers at 5th and 95th percentiles:
 numeric_columns = df_cleaned.select_dtypes(include=[np.number]).columns  
 lower_limit = df_cleaned[numeric_columns].quantile(0.10)  
 upper_limit = df_cleaned[numeric_columns].quantile(0.90)
+```
 
 This code caps outliers in numerical columns at the 10th and 90th percentiles, ensuring that extreme values don't skew the dataset.
 
