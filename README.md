@@ -42,6 +42,7 @@ Together, we defined the correlation matrix and selected the features which woul
 - **sqft_above**
 - **bathrooms**
 
+### Additional Cleaning:
 **id**, **date**, and **zipcode**: These columns were removed because they had low correlation with the target variable (price), meaning they did not provide meaningful information for predicting house prices.
 
 **sqft_above** and **sqft_basement**: These were dropped due to redundancy. Combined, they provided the same information as the **sqft_living** column, making them unnecessary for the analysis.
