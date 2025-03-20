@@ -69,7 +69,7 @@ The team noticed that the feature with the most extreme outliers was the target 
 
 ![Price Distribution](https://github.com/user-attachments/assets/f6852e05-fd3e-4968-97a1-00afa266a5c1)
 
-The price feature appears skewed on the left and has extreme outliers on the right. The team focused on reducing the noise introduced by these outliers.
+The price feature appears skewed on the right and has extreme outliers on the right tail. The team focused on reducing the noise introduced by these outliers.
 
 Marc found the cap for the numerical features, resulting in the best regression results. The following code was used to cap outliers:
 
