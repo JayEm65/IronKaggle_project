@@ -42,7 +42,11 @@ Together, we defined the correlation matrix and selected the features which woul
 - **sqft_above**
 - **bathrooms**
 
-The rest of the features had a weak correlation.
+**id**, **date**, and **zipcode**: These columns were removed because they had low correlation with the target variable (price), meaning they did not provide meaningful information for predicting house prices.
+
+**sqft_above** and **sqft_basement**: These were dropped due to redundancy. Combined, they provided the same information as the **sqft_living** column, making them unnecessary for the analysis.
+
+After removing these features, the correlation matrix was recalculated to assess the relationships between the remaining variables and the target variable (price).
 
 At this point, Marta and Mirko took on the task to create a baseline `LinearRegression` model without making any further feature selection or engineering.
 
