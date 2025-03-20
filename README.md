@@ -69,7 +69,7 @@ The price feature appears skewed on the left and has extreme outliers on the rig
 Marc found the cap for the numerical features, resulting in the best regression results. The following code was used to cap outliers:
 
 ```python
-# Cap outliers at 5th and 95th percentiles:
+# Cap outliers at 10th and 90th percentiles:
 numeric_columns = df_cleaned.select_dtypes(include=[np.number]).columns  
 lower_limit = df_cleaned[numeric_columns].quantile(0.10)  
 upper_limit = df_cleaned[numeric_columns].quantile(0.90)
@@ -79,7 +79,7 @@ This code caps outliers in numerical columns at the 10th and 90th percentiles, e
 
 After this feature engineering process, the results achieved with the `RandomForest` model were:
 
-- **R²** = 0.8867
+- **R²** = 0.8795
 - **RMSE** = 85258.4252
 - **MAE** = 57231.8505
 - **MSE** = 7268999073.8572
