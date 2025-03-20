@@ -110,6 +110,6 @@ This makes our `XGB` model a good model to predict house values, with an average
 For further information on the results and the models used, please refer to the presentation attached in the repository.
 
 ### Team Members:
-- **Marta**
-- **Mirko**
-- **Marc**
+- [Marta](https://github.com/martasamuel)  
+- [Mirko](https://github.com/MC993)  
+- [Marc](https://github.com/JayEm65)
