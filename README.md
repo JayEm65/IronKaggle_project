@@ -85,25 +85,25 @@ This code caps outliers in numerical columns at the 10th and 90th percentiles, e
 After this feature engineering process, the results achieved with the `RandomForest` model were:
 
 - **R²** = 0.8795
-- **RMSE** = 85258.4252
-- **MAE** = 57231.8505
-- **MSE** = 7268999073.8572
+- **RMSE** = 72446.0886
+- **MAE** = 49116.5845
+- **MSE** = 5248435758.6245
 
 ### Final XGB Model Results:
 An even better result was achieved with the `XGB` model:
 
-- **R²** = 0.9941
-- **RMSE** = 8.6931
-- **MAE** = 6.3539
-- **MSE** = 75.5693
+- **R²** = 0.9949
+- **RMSE** = 7.5078
+- **MAE** = 5.6699
+- **MSE** = 56.3666
 
-To ensure the model wasn't overfitted, cross-validation was implemented. The results showed a mean cross-validation RMSE of 7.9858.
+To ensure the model wasn't overfitted, cross-validation was implemented. The results showed a mean cross-validation RMSE of 7.7688.
 
 #### Cross-Validation RMSE Scores:
-- [7.62387532 8.48389226 7.88998129 8.18427953 7.74694593]
+- [7.89937736 8.03973653 7.53021126 7.48371672 7.8909188]
 
 #### Mean Cross-Validation RMSE:
-- **7.985794867160695**
+- **7.7687921336551735**
 
 This makes our `XGB` model a good model to predict house values, with an average margin of error under $10,000.
 
